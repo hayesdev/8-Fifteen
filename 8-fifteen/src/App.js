@@ -10,8 +10,8 @@ const App = () => {
         <Nav />
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/tickets" element={<TicketPage />} />
-          <Route path="/tickets/:id" element={<TicketPage editMode={true} />} />
+          <Route path="/ticket" element={<TicketPage />} />
+          <Route path="/ticket/:id" element={<TicketPage editMode={true} />} />
         </Routes>
       </BrowserRouter>
     </div>
