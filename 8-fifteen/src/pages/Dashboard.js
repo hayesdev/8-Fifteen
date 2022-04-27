@@ -1,6 +1,6 @@
 import React from "react";
 import TicketCard from "../components/TicketCard";
-import logo from "../images/marmot.jpg";
+import avatar from "../images/gorski-rpg.png";
 
 const Dashboard = () => {
   const tickets = [
@@ -9,7 +9,7 @@ const Dashboard = () => {
       color: "blue",
       title: "NFT Video",
       owner: "Greg Hayes",
-      avatar: { logo },
+      avatar: { avatar },
       status: "done",
       priority: 5,
       progress: 100,
@@ -21,7 +21,7 @@ const Dashboard = () => {
       color: "green",
       title: "NFT Video",
       owner: "Greg Hayes",
-      avatar: { logo },
+      avatar: { avatar },
       status: "working on it",
       priority: 1,
       progress: 90,
@@ -33,7 +33,7 @@ const Dashboard = () => {
       color: "red",
       title: "NFT Video",
       owner: "Greg Hayes",
-      avatar: { logo },
+      avatar: { avatar },
       status: "working on it",
       priority: 2,
       progress: 25,
@@ -45,8 +45,6 @@ const Dashboard = () => {
   const uniqueCategories = [
     ...new Set(tickets?.map(({ category }) => category)),
   ];
-
-  // console.log(uniqueCategories);
 
   return (
     <div className="dashboard">
