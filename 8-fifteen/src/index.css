@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 .app {
@@ -14,8 +15,8 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-color: rgb(43,43,63);
-  color: rgb(255,255,255);
+  background-color: rgb(43, 43, 63);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -42,8 +43,8 @@ nav .icon {
 }
 
 .dashboard .ticket-container {
-    height: 80vh;
-    overflow: scroll;
+  height: 80vh;
+  overflow: scroll;
 }
 
 /***** Ticket Card *****/
@@ -59,9 +60,25 @@ nav .icon {
 
 .ticket-card #link > * {
   display: flex;
-  align-items: center;  
+  align-items: center;
   width: 100%;
   margin: 2px;
   padding: 30px;
   background-color: rgb(221, 221, 221);
+}
+
+.ticket-card .ticket-color {
+  width: 15px !important;
+  margin: 2px;
+}
+
+.ticket-card .avatar-container {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+}
+
+.img-container img {
+  width: 80px;
+  height: 80px;
 }
