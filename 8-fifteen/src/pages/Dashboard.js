@@ -22,7 +22,7 @@ const Dashboard = () => {
       title: "NFT Video",
       owner: "Greg Hayes",
       avatar: { avatar },
-      status: "working on it",
+      status: "stuck",
       priority: 1,
       progress: 90,
       description: "Video demonstrating working with NFT's safely",
