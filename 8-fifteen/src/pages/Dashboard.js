@@ -58,6 +58,8 @@ const Dashboard = () => {
                 .filter((ticket) => ticket.category === uniqueCategory)
                 .map((filteredTicket, _index) => (
                   <TicketCard
+                    // elements in a mapping/list need the 'key' prop
+                    key={_index}
                     id={_index}
                     color={filteredTicket.color}
                     ticket={filteredTicket}
