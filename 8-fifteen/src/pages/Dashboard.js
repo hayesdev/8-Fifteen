@@ -24,7 +24,7 @@ const Dashboard = () => {
       avatar: { avatar },
       status: "stuck",
       priority: 1,
-      progress: 90,
+      progress: 25,
       description: "Video demonstrating working with NFT's safely",
       createdAt: Date.now(),
     },
@@ -36,10 +36,18 @@ const Dashboard = () => {
       avatar: { avatar },
       status: "working on it",
       priority: 2,
-      progress: 25,
+      progress: 75,
       description: "Video demonstrating working with NFT's safely",
       createdAt: Date.now(),
     },
+  ];
+
+  const colors = [
+    "rgb(255, 179, 186)",
+    "rgb(255, 223, 186)",
+    "rgb(255, 255, 186)",
+    "rgb(186, 255, 201)",
+    "rgb(186, 255, 255)",
   ];
 
   const uniqueCategories = [
@@ -61,7 +69,7 @@ const Dashboard = () => {
                     // elements in a mapping/list need the 'key' prop
                     key={_index}
                     id={_index}
-                    color={filteredTicket.color}
+                    color={colors[categoryIndex] || colors[0]}
                     ticket={filteredTicket}
                   />
                 ))}

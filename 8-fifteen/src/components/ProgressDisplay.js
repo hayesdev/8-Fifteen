@@ -1,7 +1,16 @@
 import React from "react";
 
-const ProgressDisplay = () => {
-  return <div>ProgressDisplay</div>;
+const ProgressDisplay = ({ progress }) => {
+  return (
+    <div className="progress-display">
+      <div className="progress-bar">
+        <div
+          className="progress-indicator"
+          style={{ width: progress + "%" }}
+        ></div>
+      </div>
+    </div>
+  );
 };
 
 export default ProgressDisplay;
