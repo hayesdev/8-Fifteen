@@ -74,7 +74,7 @@ nav .icon {
 
 .ticket-card .ticket-color {
   width: 15px !important;
-  margin: 2px;
+  padding: 15px !important;
 }
 
 .ticket-card .avatar-container {
@@ -124,6 +124,7 @@ nav .icon {
 
 .progress-bar .progress-indicator {
   background-color: rgb(104, 104, 175);
+  border-radius: 15px;
   height: 100%;
 }
 
@@ -173,6 +174,7 @@ nav .icon {
 
 .ticket form label {
   margin: 20px 0 0 0;
+  padding-left: 5px;
 }
 
 .ticket form select,
@@ -183,6 +185,7 @@ nav .icon {
   border-radius: 10px;
   margin: 5px;
 }
+
 .ticket form .multiple-input-container {
-  margin: 20px 0;
+  margin: 16px 0;
 }
