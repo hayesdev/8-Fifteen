@@ -14,7 +14,7 @@ const Dashboard = () => {
       priority: 5,
       progress: 100,
       description: "Video demonstrating working with NFT's safely",
-      createdAt: Date.now(),
+      createdAt: new Date().toISOString(),
     },
     {
       category: "Q2 2022",
@@ -26,7 +26,7 @@ const Dashboard = () => {
       priority: 1,
       progress: 25,
       description: "Video demonstrating working with NFT's safely",
-      createdAt: Date.now(),
+      createdAt: new Date().toISOString(),
     },
     {
       category: "Q1 2023",
@@ -38,7 +38,7 @@ const Dashboard = () => {
       priority: 2,
       progress: 75,
       description: "Video demonstrating working with NFT's safely",
-      createdAt: Date.now(),
+      createdAt: new Date().toISOString(),
     },
   ];
 
